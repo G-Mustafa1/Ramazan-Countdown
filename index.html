@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ramadan Countdown</title>
+   <link rel="shortcut icon"
+      href="img/icon.jpg"
+      class="icon" type="image/x-icon">
+   <!-- aos css link -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!-- google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+   <!-- css link -->
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div id="loader" class="loader">
+      <img src="img/loader_gif.gif" alt="">
+   </div>
+   <div data-aos="fade-up" data-aos-offset="200" id="mein" class="mein">
+      <div class="heading">
+         <h1 data-aos="fade-down">Ramadan Countdown</h1>
+      </div>
+      <div class="countdown">
+         <div data-aos="fade-right" class="box">
+            <h1>Days</h1>
+            <h1 id="days">00</h1>
+         </div>
+         <div data-aos="flip-left" class="box">
+            <h1>Hours</h1>
+            <h1 id="hour">00</h1>
+         </div>
+         <div data-aos="flip-right" class="box">
+            <h1>Minuts</h1>
+            <h1 id="min">00</h1>
+         </div>
+         <div data-aos="fade-left" class="box">
+            <h1>Second</h1>
+            <h1 id="sec">00</h1>
+         </div>
+      </div>
+   </div>
+   <!-- aos js link -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
+   <!-- js link -->
+   <script src="app.js"></script>
+</body>
+
+</html>

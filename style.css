@@ -1,0 +1,118 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: rgb(235, 233, 234);
+   overflow-x: hidden;
+}
+
+.icon {
+   border-radius: 50%;
+}
+#mein{
+   display: none;
+}
+.mein {
+   overflow-x: hidden;
+   /* margin-top: 0px; */
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   background-image: url('https://img.freepik.com/premium-psd/copyspace-mockup-with-ramadan-concept_23-2148117376.jpg?w=1080');
+}
+
+.countdown {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   height: 45vh;
+}
+
+.box {
+   font-family: "Roboto", serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   /* padding: 20px; */
+   background-color: rgb(235, 233, 234);
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box h1 {
+   color: rgb(32, 30, 31);
+}
+
+.box:hover {
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+   rgba(0, 0, 0, 0.12) 0px -12px 30px,
+   rgba(0, 0, 0, 0.12) 0px 4px 6px,
+   rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+   rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   transition: 1.1s;
+   transform: scale(1.10);
+}
+
+.heading h1 {
+   text-shadow: 1px 1px 2px white, 0 0 1em rgba(0, 0, 0, 0.750), 0 0 0.2em rgba(0, 0, 0, 0.750);
+   /* text-shadow: rgb(235, 233, 234) 1px 0 10px; */
+   font-family: "Kalam", serif;
+   font-size: 60px;
+   text-align: center;
+   color: rgb(32, 30, 31);
+   padding-top: 45px;
+   /* margin-top: 0px;
+   padding-top: 0px; */
+}
+
+@media(max-width: 600px) {
+   .mein {
+      background-position: right;
+      height: auto;
+      padding-bottom: 20px;
+   }
+
+   .countdown {
+      gap: 50px;
+      height: 100vh;
+      flex-direction: column;
+      /* padding-bottom: 50px;
+      margin-bottom: 50px; */
+   }
+
+   .loader img {
+      width: 200px;
+   }
+}
+
+.loader {
+   width: 100%;
+   background-color: #fff;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loader img {
+   width: 350px;
+}
+
+@media(max-width:380px) {
+   .box h1 {
+      font-size: 30px;
+   }
+
+   /* .heading h1{
+      color: rgb(138, 112, 0);
+   } */
+}
